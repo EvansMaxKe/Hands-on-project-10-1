@@ -1,0 +1,175 @@
+/* style.css */
+
+
+
+/* Box sizing for all the elememnts of the program */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+/* Styling the body */
+body {
+   line-height: 1;
+   min-width: 320px;
+   max-width: 640px;
+   background: white;
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif; 
+   -webkit-box-shadow: 10px 0px 10px rgba(50, 50, 50, 1),
+                       0px 10px 10px rgba(50, 50, 50, 1),
+                       -10px 0px 10px rgba(50, 50, 50, 1);
+   -moz-box-shadow:    10px 0px 10px rgba(50, 50, 50, 1),
+                       0px 10px 10px rgba(50, 50, 50, 1),
+                       -10px 0px 10px rgba(50, 50, 50, 1);
+   box-shadow:         10px 0px 10px rgba(50, 50, 50, 1),
+                       0px 10px 10px rgba(50, 50, 50, 1),
+                       -10px 0px 10px rgba(50, 50, 50, 1);
+}
+
+h1{
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* page header */
+header {
+   background: #04819E;
+   width: 100%;
+   color: #FFFFFF;
+   font-size: 48px;
+   text-align: center;
+   line-height: 1.5em;
+   border-bottom: 1px solid black;
+}
+
+/* main content of the program*/
+div.container{
+   width: 100%;
+   text-align: center;
+   background: ivory;
+   padding-bottom: 20px;
+   overflow: auto;
+}
+
+h2 {
+   font-weight: bold;
+   font-size: 24px;
+   padding: 10px;
+  
+}
+/* spaces to be filled by the tiles of the image */
+#grid {
+   overflow: auto;
+   width: 266px;
+   margin: 0 auto;
+   border: 1px solid black;
+}
+
+#grid div {
+   float: left;
+   width: 88px;
+   height: 99px;
+   border: 1px solid black;
+}
+
+#top1, #bottom1 {
+   clear: left;
+}
+
+#image {
+   float: left;
+   margin-left: 50px;
+}
+
+#image img {
+   border: 10px solid darkgoldenrod;
+   height: 151px;
+   width: 195px;
+}
+
+#pieces {
+   position: relative;
+   height: 110px;
+}
+
+#pieces div {
+   position: absolute;
+   width: 14.6667%;
+   margin: 1%;
+   padding: 1em 0;
+   height: 110px;
+}
+/* tiles of the picture */
+#piece1 {
+   left: 0px;
+   background: url("images/frog_03.png") center center no-repeat;
+}
+
+#piece2 {
+   left: 16.6667%;
+   background: url("images/frog_02.png") center center no-repeat;
+}
+
+#piece3 {
+   left: 33.3334%;
+   background: url("images/frog_05.png") center center no-repeat;
+}
+
+#piece4 {
+   left: 50%;
+   background: url("images/frog_01.png") center center no-repeat;
+}
+
+#piece5 {
+   left: 66.6667%;
+   background: url("images/frog_06.png") center center no-repeat;
+}
+
+#piece6 {
+   left: 83.3334%;
+   background: url("images/frog_04.png") center center no-repeat;
+}
+/* responsive on small screens */
+@media all and (max-width: 550px) {
+   #grid {
+      margin: 0 auto;
+      width: 134px;
+   }
+   #grid div {
+      width: 44px;
+      height: 49px;
+   }
+   #image {
+      float: left;
+      width: 100%;
+      text-align: center;
+      margin: 0 0 20px;
+   }
+   #piece1 {
+      background: url("images/frog_03_sm.png") center center no-repeat;
+   }
+   
+   #piece2 {
+      background: url("images/frog_02_sm.png") center center no-repeat;
+   }
+   
+   #piece3 {
+      background: url("images/frog_05_sm.png") center center no-repeat;
+   }
+   
+   #piece4 {
+      background: url("images/frog_01_sm.png") center center no-repeat;
+   }
+   
+   #piece5 {
+      background: url("images/frog_06_sm.png") center center no-repeat;
+   }
+   
+   #piece6 {
+      background: url("images/frog_04_sm.png") center center no-repeat;
+   }
+}
